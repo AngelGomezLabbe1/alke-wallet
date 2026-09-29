@@ -29,6 +29,14 @@ Los datos son almacenados localmente mediante LocalStorage, permitiendo mantener
 14. Interactividad y manipulación del DOM mediante JavaScript y jQuery.
 15. Navegación entre las diferentes pantallas de la aplicación.
 
+## Inicio de sesión
+
+Para acceder a la aplicación se deben utilizar las siguientes credenciales de prueba:
+
+- Correo: `usuario@wallet.cl`
+- Contraseña: `123456`
+
+El sistema valida las credenciales mediante JavaScript y permite acceder al menú principal cuando los datos ingresados son correctos.
 
 ## Datos de acceso
 Usuario: admin Contraseña: 1234
