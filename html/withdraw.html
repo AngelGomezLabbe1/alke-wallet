@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mi Wallet - Retirar dinero</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS propio -->
+    <link
+        rel="stylesheet"
+        href="../CSS/styles.css"
+    >
+
+</head>
+
+
+<body class="bg-light">
+
+
+    <!-- ENCABEZADO -->
+
+    <header class="bg-primary text-white py-3">
+
+        <div class="container">
+
+            <div
+                class="d-flex justify-content-between align-items-center"
+            >
+
+                <h3 class="mb-0">
+                    💳 Mi Wallet
+                </h3>
+
+                <a
+                    href="menu.html"
+                    class="btn btn-light btn-sm"
+                >
+                    Menú
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="container py-5">
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6">
+
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body p-4">
+
+
+                        <!-- TÍTULO -->
+
+                        <div class="text-center mb-4">
+
+                            <h1>
+                                💸 Retirar dinero
+                            </h1>
+
+                            <p class="text-muted">
+                                Ingresa el monto que deseas retirar.
+                            </p>
+
+                        </div>
+
+
+                        <!-- ALERTAS -->
+
+                        <div id="alert-container"></div>
+
+
+                        <!-- SALDO -->
+
+                        <div class="alert alert-info text-center">
+
+                            <strong>
+                                Saldo disponible:
+                            </strong>
+
+                            <div
+                                id="saldoActual"
+                                class="fs-4 mt-1"
+                            >
+                                $0
+                            </div>
+
+                        </div>
+
+
+                        <!-- FORMULARIO -->
+
+                        <form id="withdrawForm">
+
+
+                            <div class="mb-3">
+
+                                <label
+                                    for="montoRetiro"
+                                    class="form-label fw-bold"
+                                >
+                                    Monto a retirar
+                                </label>
+
+
+                                <input
+                                    type="number"
+                                    id="montoRetiro"
+                                    class="form-control"
+                                    placeholder="Ej: 50000"
+                                    min="1"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn btn-danger w-100"
+                            >
+                                💸 Retirar dinero
+                            </button>
+
+
+                        </form>
+
+
+                        <!-- RESULTADO -->
+
+                        <div id="retiroRealizado"></div>
+
+
+                        <!-- VOLVER -->
+
+                        <div class="text-center mt-3">
+
+                            <a
+                                href="menu.html"
+                                class="btn btn-outline-secondary"
+                            >
+                                ← Volver al menú
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- JQUERY -->
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+    ></script>
+
+
+    <!-- BOOTSTRAP JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+    <!-- JAVASCRIPT DE LA WALLET -->
+
+    <script src="../JS/wallet.js"></script>
+
+
+</body>
+
+</html>

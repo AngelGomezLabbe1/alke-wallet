@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.contacto {
+    cursor: pointer;
+}
+
+.contacto.seleccionado {
+    border: 2px solid #0d6efd;
+    background-color: #e7f1ff;
+}
+
+#depositoRealizado {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.movimiento {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
